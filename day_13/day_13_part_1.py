@@ -7,7 +7,7 @@ for i in puzzle:
 caught = 0
 
 for idx, i in enumerate(firewall):
-	if i != 0 and (idx) % (i*2 - 2) == 0: 
+	if i != 0 and (idx) % (i*2 - 2) == 0:
 		caught += idx * i
 
 print caught
