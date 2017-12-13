@@ -4,5 +4,4 @@ score = 0
 for idx, i in enumerate(puzzle):
 	if i == puzzle[(len(puzzle)/2 + idx) % len(puzzle)]:
 		score += int(i)
-
 print score

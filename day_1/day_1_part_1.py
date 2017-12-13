@@ -8,5 +8,4 @@ for idx, i in enumerate(puzzle):
 
 	elif i == puzzle[idx - 1]:
 		score += int(i)
-
 print score
