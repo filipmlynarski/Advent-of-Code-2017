@@ -17,6 +17,7 @@ for move in puzzle:
 
 x2, y2 = 0, 0
 moves = 0
+
 while True:
 	moves += 1
 	if y2 > y:

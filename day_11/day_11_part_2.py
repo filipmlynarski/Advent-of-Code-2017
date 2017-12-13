@@ -2,6 +2,7 @@ puzzle = open('puzzle').read().split(',')
 
 x, y = 0, 0
 save = []
+
 for move in puzzle:
 	move_by = 1
 	if len(move) == 1:
@@ -15,7 +16,9 @@ for move in puzzle:
 	elif 'w' in move:
 		x -= move_by
 	save.append([x, y])
+
 furthest = 0
+
 for idx, i in enumerate(save):
 	x = i[0]
 	y = i[1]
