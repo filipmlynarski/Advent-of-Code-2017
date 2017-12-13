@@ -1,6 +1,7 @@
 puzzle = [i.split() for i in open('puzzle').read().replace(',', ' ').replace(' <->', ' ').splitlines()]
 
 groups = 0
+
 while puzzle:
 	groups += 1
 	match = puzzle[0]
