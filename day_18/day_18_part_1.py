@@ -50,11 +50,12 @@ while idx < len(puzzle):
 			break
 
 	elif puzzle[idx][0] == 'jgz':
-		if RepresentsInt(i[1]) and int(i[1]) > 0:
-			if RepresentsInt(i[2]):
-				idx += int(i[2])
-			else:
-				idx += registers[i[2]]
+		if RepresentsInt(i[1]):
+			if int(i[1]) > 0:
+				if RepresentsInt(i[2]):
+					idx += int(i[2]) - 1
+				else:
+					idx += registers[i[2]] - 1
 		elif registers[i[1]] > 0:
 			if RepresentsInt(i[2]):
 				idx += int(i[2]) - 1
